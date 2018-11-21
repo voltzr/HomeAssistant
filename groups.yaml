@@ -1,0 +1,50 @@
+  default_view:
+    view: yes
+    icon: mdi:home
+    entities:
+      - group.master
+      - group.downstairs
+      - group.charlotte
+      - group.griffin
+      - group.bedroom
+      - group.shortcuts
+  shortcuts:
+    name: Shortcuts
+    entities:
+      - script.1540714377736
+      - script.1541978643490
+      - script.1541979214658
+  charlotte:
+    name: Charlotte
+    entities:
+      - binary_sensor.chars_room_occupancy
+      - sensor.chars_room_temperature
+      - light.charlottes_light
+      - camera.charlotte
+  griffin:
+    name: Griffin
+    entities:
+      - light.linear_lb60z1_dimmable_led_light_bulb_level
+      - camera.griffin
+  bedroom:
+    name: Bedroom
+    entities:
+      - binary_sensor.bedroom_occupancy
+      - sensor.bedroom_temperature
+      - light.bedroom
+      - light.bedroom_toliet
+  master:
+    name: Master
+    entities:
+      - device_tracker.kt_s8_kt_s8
+      - sensor.home_temperature
+      - sensor.home_humidity
+      - group.all_lights
+      - lock.schlage_be469_touchscreen_deadbolt_locked_2
+      - climate.home
+  downstairs:
+    name: Downstairs
+    entities:
+      - binary_sensor.kitchen_occupancy
+      - light.living_room
+      - sensor.kitchen_temperature
